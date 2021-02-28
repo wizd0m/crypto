@@ -6,9 +6,7 @@ int main(int argc, char *argv[]) {
      int i,j,v;
      char *k, c;
 
-     for(i = 0; i < argc; i++) 
-         printf("i = %d  value = %s\n", i, argv[i]);
-
+     printf("Shift-cipher encrypt \nusage: shift-key plaintext\nOutput : ciphertext\n");
      k = argv[1];
      c = *(k++);
      i = 0; /* for counting a value of key */

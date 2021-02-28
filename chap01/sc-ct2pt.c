@@ -6,8 +6,7 @@ int main(int argc, char *argv[]) {
      int i,j,v;
      char *k, c;
 
-     for(i = 0; i < argc; i++) 
-         printf("i = %d  value = %s\n", i, argv[i]);
+     printf("Shift-cipher decrypt \nusage: shift-key ciphertext\nOutput : plaintext\n");
 
      k = argv[1];
      c = *(k++);
