@@ -32,11 +32,11 @@ int main(int argc, char *argv[]) {
      }
      
 
-     printf("\nShift ciphertext = ");
+     printf("\nDecrpt to plaintext = ");
      k = argv[2];
      c = *(k++);
      while(c != '\0') {
-         c = ((c - 'A' + v) % 26) + 'a';
+         c = ((c - 'a' - v + 26) % 26) + 'A';
          putchar(c);
          c = *(k++);
      }
